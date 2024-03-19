@@ -1,0 +1,27 @@
+.not-show {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 100ch;
+    margin: 0px auto;
+    font-size: 16px;
+    background-color: #F2F5F9;
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}

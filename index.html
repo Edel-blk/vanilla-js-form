@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./main.css" />
+
+  <title>Vanilla JS Form</title>
+</head>
+<body>
+  <div class="container" >
+    <div class="vertical-center" >
+      <form class="register" id="register" >
+        <label>Register</label><br>
+
+        <label for="fname">Name</label><br>
+
+        <input type="text" id="name" name="name"><br>
+
+        <label for="lname">Email</label><br>
+
+        <input type="text" id="email" name="email"><br>
+
+        <input type="submit" value="Continue" />
+      </form>
+
+      <form class="topics not-show" id="topics">
+        <label>Which topics you are interested in?</label><br>
+
+        <button onclick="return software()" id="software-bttn" >Software Development</button><br>
+
+        <button onclick="return userExperience()" >User Experience</button><br>
+
+        <button onclick="return graphicDesign()" >Graphic Design</button><br>
+
+        <input type="submit" value="Continue" />
+      </form>
+
+      <section class="data not-show" id="summary">
+        <h2>
+          Summary
+        </h2>
+
+        <div>Name: <span id="userName"></span></div>
+        <div>Email: <span id="userEmail"></span></div>
+
+        <div>
+          <div>
+            Topics
+          </div>
+
+          <ul id="topics-list" >
+
+          </ul>
+        </div>
+
+        <input type="submit" value="Confirm" />
+      </section>
+    </div>
+  </div>
+
+  <script src="./index.js" ></script>
+</body>
+</html>
